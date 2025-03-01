@@ -14,7 +14,7 @@ class Book:
         return self._author
 
 
-    def str(self):
+    def __str__(self):
         return f"Книга {self.name}. Автор {self.author}"
 
     def repr(self):
