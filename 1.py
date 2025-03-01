@@ -26,7 +26,8 @@ class PaperBook(Book):
         super().init(name, author)
         self.set_pages(pages)
 
-    def get_pages(self):
+    @property
+    def pages(self):
         return self._pages
 
     def set_pages(self, value):
