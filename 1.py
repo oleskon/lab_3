@@ -9,7 +9,8 @@ class Book:
     def name(self):
         return self._name
 
-    def get_author(self):
+    @property
+    def author(self):
         return self._author
 
     name = property(get_name)
