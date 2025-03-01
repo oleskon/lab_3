@@ -13,8 +13,6 @@ class Book:
     def author(self):
         return self._author
 
-    name = property(get_name)
-    author = property(get_author)
 
     def str(self):
         return f"Книга {self.name}. Автор {self.author}"
