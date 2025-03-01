@@ -17,7 +17,7 @@ class Book:
     def __str__(self):
         return f"Книга '{self.name}'. Автор {self.author}"
 
-    def repr(self):
+    def __repr__(self):
         return f"{self.class.name}(name={self.name!r}, author={self.author!r})"
 
 
