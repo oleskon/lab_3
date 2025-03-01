@@ -30,7 +30,8 @@ class PaperBook(Book):
     def pages(self):
         return self._pages
 
-    def set_pages(self, value):
+    @pages.setter
+    def pages(self, value):
         if not isinstance(value, int) or value <= 0:
             raise ValueError("Количество страниц должно быть положительным целым числом.")
         self._pages = value
