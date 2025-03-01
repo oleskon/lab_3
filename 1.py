@@ -5,7 +5,8 @@ class Book:
         self._name = name
         self._author = author
 
-    def get_name(self):
+    @property
+    def name(self):
         return self._name
 
     def get_author(self):
